@@ -7,5 +7,5 @@
 // Exit the program
 // %rdi => exit code
 exit:
-	movq SYS_EXIT, %rax
+	movq $SYS_EXIT, %rax
 	syscall
