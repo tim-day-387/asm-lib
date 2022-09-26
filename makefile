@@ -1,5 +1,5 @@
-OBJECT_DIRS = exit io mem std-io
-OBJECTS = exit/exit.o io/io.o mem/mem.o std-io/std-io.o
+OBJECT_DIRS = exit io mem std-io sys
+OBJECTS = exit/exit.o io/io.o mem/mem.o std-io/std-io.o sys/sys.o
 
 all: test libasm.o libasm.so
 
@@ -28,3 +28,4 @@ clean:
 	rm io/*.o
 	rm mem/*.o
 	rm std-io/*.o
+	rm sys/*.o
